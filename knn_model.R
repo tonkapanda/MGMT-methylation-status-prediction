@@ -57,13 +57,13 @@ testing_data <- testing_data_raw |>
   filter(across(all_of(xgb_features), is.finite))
 
 print("--- --- --- data cleaning info --- --- --- ")
-print(paste("original training rows:", nrow(training_data_raw)))
-print(paste("cleaned training rows:", nrow(training_data)))
-print(paste("rows removed from training:", nrow(training_data_raw) - nrow(training_data)))
+print(paste("original training observations:", nrow(training_data_raw)))
+print(paste("cleaned training observations:", nrow(training_data)))
+print(paste("observations removed from training:", nrow(training_data_raw) - nrow(training_data)))
 print("--- --- --- --- --- --- --- --- --- --- ---")
-print(paste("original testing rows:", nrow(testing_data_raw)))
-print(paste("cleaned testing rows:", nrow(testing_data)))
-print(paste("rows removed from testing:", nrow(testing_data_raw) - nrow(testing_data)))
+print(paste("original testing observations:", nrow(testing_data_raw)))
+print(paste("cleaned testing observations:", nrow(testing_data)))
+print(paste("observations removed from testing:", nrow(testing_data_raw) - nrow(testing_data)))
 print("--- --- --- --- --- --- --- --- --- --- ---")
 
 # knn model specification [weight function and neighbors to be tuned during model fitting]
