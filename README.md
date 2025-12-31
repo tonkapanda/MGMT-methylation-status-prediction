@@ -1,15 +1,14 @@
-## Repository Contents
-
-*   `base_knn_model.R` - Initial baseline k-NN model.
-*   `knn_model.R` - Tuned k-NN model (optimizing for ROC AUC, tuning distance metrics).
-*   `data/` - Contains training and testing datasets.
-*   `plots/` - Visualizations of hyperparameter tuning results (ROC AUC vs Neighbors).
-
-# MGMT Methylation Status Prediction in Glioblastoma (GBM)
+# MGMT Methylation Status Prediction in Glioblastoma
 
 This repository explores the feasibility of using radiomics-based machine learning models to predicting MGMT methylation status in Glioblastoma Multiforme (GBM) patients.
 
 This work is part of the **URO REX Program at UBC** under the guidance of **Dr. Huan Zhong**.
+
+## Repository Contents
+   `base_knn_model.R` - Initial baseline k-NN model.
+   `knn_model.R` - Tuned k-NN model (optimizing for ROC AUC, tuning distance metrics).
+   `data/` - Contains training and testing datasets.
+   `plots/` - Visualizations of hyperparameter tuning results (ROC AUC vs Neighbors).
 
 ## Reference Paper
 
@@ -37,12 +36,12 @@ Chose **k-Nearest Neighbors (k-NN)** as the baseline algorithm to establish a pe
     *   **Metric Optimization**: Switched from Accuracy to **ROC AUC** for possible class imbalance.
     *   **Distance Metric**: Tuned `dist_power` to compare Manhattan (1) vs. Euclidean (2) distances (including 1.5).
 
-### Results and Discussion
+### 3. Results and Discussion
 
 Initial results from `base_knn_model.R` suggested a promising testing accuracy of ~70.5%.
 
 However, from `knn_model.R`, the model was largely predicting the majority class for most patients from the limited number of observations in the training + testing dataset. The inadequate ROC AUC score of 0.498 indicates that despite the high accuracy, the model could not effectively rank the observations correctly or distinguish the signal from noise using only these specific 20 features with a k-NN approach. 
 
-## Future Improvements
+### 4. Future Improvements
 
 Move to ensemble models like Random Forest/XGBoost, or SVM, while working with a larger, original dataset.
