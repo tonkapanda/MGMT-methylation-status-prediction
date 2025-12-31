@@ -2,7 +2,7 @@
 
 This repository explores the feasibility of using radiomics-based machine learning models to predicting MGMT methylation status in Glioblastoma Multiforme (GBM) patients.
 
-This work is part of the **URO REX Program at UBC** under the guidance of **Dr. Huan Zhong**.
+Part of the URO REX Program at UBC under the guidance of Dr. Huan Zhong.
 
 ## Repository Contents
 *   `base_knn_model.R` - Initial baseline k-NN model.
@@ -15,9 +15,9 @@ This work is part of the **URO REX Program at UBC** under the guidance of **Dr. 
 This project attempts to replicate and build upon the findings from the following study:
 
 **Improving MGMT methylation status prediction of glioblastoma through optimizing radiomics features using genetic algorithm-based machine learning approach**
-*Duyen Thi Do, Ming-Ren Yang, Luu Ho Thanh Lam, Nguyen Quoc Khanh Le & Yu-Wei Wu*
-*Scientific Reports* volume 12, Article number: 13412 (2022)
-[Access the Article](https://www.nature.com/articles/s41598-022-17707-w)
+*   Duyen Thi Do, Ming-Ren Yang, Luu Ho Thanh Lam, Nguyen Quoc Khanh Le & Yu-Wei Wu*
+*   Scientific Reports* volume 12, Article number: 13412 (2022)
+* [Access the Article](https://www.nature.com/articles/s41598-022-17707-w)
 
 The original paper achieved a model performance (Accuracy: 92.5%, Sensitivity: 0.894) using a Genetic Algorithm (GA)-based wrapper model on radiomics features extracted from MRI images from TCIA.
 
