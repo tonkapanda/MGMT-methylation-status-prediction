@@ -5,10 +5,10 @@ This repository explores the feasibility of using radiomics-based machine learni
 This work is part of the **URO REX Program at UBC** under the guidance of **Dr. Huan Zhong**.
 
 ## Repository Contents
-   `base_knn_model.R` - Initial baseline k-NN model.
-   `knn_model.R` - Tuned k-NN model (optimizing for ROC AUC, tuning distance metrics).
-   `data/` - Contains training and testing datasets.
-   `plots/` - Visualizations of hyperparameter tuning results (ROC AUC vs Neighbors).
+*   `base_knn_model.R` - Initial baseline k-NN model.
+*   `knn_model.R` - Tuned k-NN model (optimizing for ROC AUC, tuning distance metrics).
+*   `data/` - Contains training and testing datasets.
+*   `plots/` - Visualizations of hyperparameter tuning results (ROC AUC vs Neighbors).
 
 ## Reference Paper
 
